@@ -1,0 +1,8 @@
+# Blacklist everything
+/*
+
+# Whitelist readme and ignore file
+!.gitignore
+!README.md
+!LICENSE
+!*.sh

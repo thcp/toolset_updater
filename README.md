@@ -1,2 +1,9 @@
-# toolset_updater
-Auto update checker  for dev/cloud ops tools
+# Toolset updater
+
+Auto updater for some of my daily tools.
+
+
+Available for:
+
+- [x] Terraform
+- [x] Packer
