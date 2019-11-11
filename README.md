@@ -4,8 +4,8 @@ Auto updater for some of my daily tools.
 
 
 Available for:
-- [x] Terraform
-- [x] Packer
+- [x] [Terraform](https://github.com/hashicorp/terraform)
+- [x] [Packer](https://github.com/hashicorp/packer)
 
 Todo:
 - [ ] [kubectx/ kubens](https://github.com/ahmetb/kubectx)
