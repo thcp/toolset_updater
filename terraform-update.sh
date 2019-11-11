@@ -5,7 +5,7 @@ set -e
 
 HTOOL="terraform"
 GITHUB_URL="https://api.github.com/repos/hashicorp/${HTOOL}/releases/latest"
-INSTALLED_VERSION=$(terraform -v | awk '{print $2}')
+INSTALLED_VERSION=$(terraform -v | awk '{print $2}'| head -1)
 LATEST_VERSION=$(curl -s $GITHUB_URL | grep -oP '"tag_name": "\K(.*)(?=")'  | sed 's/v//g')
 URL="https://releases.hashicorp.com/${HTOOL}/${LATEST_VERSION}/${HTOOL}_${LATEST_VERSION}_linux_amd64.zip"
 RELEASE_URL="https://github.com/hashicorp/${HTOOL}/releases/tag/v${LATEST_VERSION}"
