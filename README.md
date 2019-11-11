@@ -8,6 +8,6 @@ Available for:
 - [x] Packer
 
 Todo:
-- [] Kubectx
-- [] Kubens
-- [] K9s
+- [ ] Kubectx
+- [ ] Kubens
+- [ ] K9s
