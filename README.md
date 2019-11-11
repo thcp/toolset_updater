@@ -8,6 +8,5 @@ Available for:
 - [x] Packer
 
 Todo:
-- [ ] Kubectx
-- [ ] Kubens
-- [ ] K9s
+- [ ] [kubectx/ kubens](https://github.com/ahmetb/kubectx)
+- [ ] [k9s](https://github.com/derailed/k9s)
