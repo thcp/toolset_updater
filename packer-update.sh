@@ -5,7 +5,7 @@ set -e
 
 HTOOL="packer"
 GITHUB_URL="https://api.github.com/repos/hashicorp/${HTOOL}/releases/latest"
-INSTALLED_VERSION=$(packer -v)
+INSTALLED_VERSION=$(packer -v || echo "0.0.0")
 LATEST_VERSION=$(curl -s $GITHUB_URL | grep -oP '"tag_name": "\K(.*)(?=")'  | sed 's/v//g')
 URL="https://releases.hashicorp.com/${HTOOL}/${LATEST_VERSION}/${HTOOL}_${LATEST_VERSION}_linux_amd64.zip"
 RELEASE_URL="https://github.com/hashicorp/${HTOOL}/releases/tag/v${LATEST_VERSION}"
